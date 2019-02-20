@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vrmv2.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Users\\Alex\\Documents\\GitHub\\RIT_Research_Studio_2017\\VRm v2\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "VRm v2 [Testing]"
+        }
+      }
+    }
+  ]
+}

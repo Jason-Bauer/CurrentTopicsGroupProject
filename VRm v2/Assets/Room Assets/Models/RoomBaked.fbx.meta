@@ -1,0 +1,186 @@
+fileFormatVersion: 2
+guid: 0466a6da6b1712f43ba075d213b5861e
+timeCreated: 1493356701
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: board
+    100002: board 1
+    100004: board 2
+    100006: body2
+    100008: cap2
+    100010: Door
+    100012: DoorFrame
+    100014: foot4
+    100016: foot5
+    100018: frame1
+    100020: frame1 1
+    100022: frame1 2
+    100024: HazardWaste
+    100026: leg1
+    100028: leg2
+    100030: //RootNode
+    100032: Sharps
+    100034: Sharps1
+    100036: Shelf
+    100038: spray_bottle1
+    100040: StandingWhiteboard
+    100042: top1
+    100044: Walls
+    100046: WhiteBoard
+    100048: WhiteBoard1
+    400000: board
+    400002: board 1
+    400004: board 2
+    400006: body2
+    400008: cap2
+    400010: Door
+    400012: DoorFrame
+    400014: foot4
+    400016: foot5
+    400018: frame1
+    400020: frame1 1
+    400022: frame1 2
+    400024: HazardWaste
+    400026: leg1
+    400028: leg2
+    400030: //RootNode
+    400032: Sharps
+    400034: Sharps1
+    400036: Shelf
+    400038: spray_bottle1
+    400040: StandingWhiteboard
+    400042: top1
+    400044: Walls
+    400046: WhiteBoard
+    400048: WhiteBoard1
+    2300000: board
+    2300002: board 1
+    2300004: board 2
+    2300006: body2
+    2300008: cap2
+    2300010: Door
+    2300012: DoorFrame
+    2300014: foot4
+    2300016: foot5
+    2300018: frame1
+    2300020: frame1 1
+    2300022: frame1 2
+    2300024: HazardWaste
+    2300026: leg1
+    2300028: leg2
+    2300030: Sharps
+    2300032: Sharps1
+    2300034: Shelf
+    2300036: top1
+    2300038: Walls
+    3300000: board
+    3300002: board 1
+    3300004: board 2
+    3300006: body2
+    3300008: cap2
+    3300010: Door
+    3300012: DoorFrame
+    3300014: foot4
+    3300016: foot5
+    3300018: frame1
+    3300020: frame1 1
+    3300022: frame1 2
+    3300024: HazardWaste
+    3300026: leg1
+    3300028: leg2
+    3300030: Sharps
+    3300032: Sharps1
+    3300034: Shelf
+    3300036: top1
+    3300038: Walls
+    4300000: Walls
+    4300002: Sharps
+    4300004: Sharps1
+    4300006: board
+    4300008: foot4
+    4300010: foot5
+    4300012: frame1
+    4300014: leg1
+    4300016: leg2
+    4300018: board
+    4300020: frame1
+    4300022: board
+    4300024: frame1
+    4300026: body2
+    4300028: cap2
+    4300030: top1
+    4300032: HazardWaste
+    4300034: DoorFrame
+    4300036: Door
+    4300038: Shelf
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
