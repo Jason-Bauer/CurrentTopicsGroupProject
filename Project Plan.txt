@@ -1,0 +1,8 @@
+The plan is to make a VR escape room experience
+
+Each person makes a few small rooms with puzzles in them, the rooms will connect back together and link into one another later on.
+
+Plan for week by week is to each build some sort of interaction/puzzle piece each week. Then later on we can design and put the pieces together into coherent rooms.
+
+Target User: VR puzzle players
+Target hardware: Headset analogous
