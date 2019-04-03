@@ -4,8 +4,9 @@ Group A
 James
     -thing in a jar and breaking the jar
     -no blockers
-Ben
-    -Raycasting from the controllers puzzles thing
+Benjamin
+    -Wrote scripts on capturing controller raycast and determining which hand it is from
+	-Working on updating main scene to fit additions and individual scene for my interactions
     -no blockers
 Jason
     -keypad 
