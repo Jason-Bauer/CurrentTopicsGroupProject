@@ -25,7 +25,7 @@ public class PointerCubeGroup : MonoBehaviour
 
         if(shouldTrigger)
         {
-            TriggerHandMatchEvent?.Invoke();
+           // TriggerHandMatchEvent.Invoke();
         }
     }
 }
