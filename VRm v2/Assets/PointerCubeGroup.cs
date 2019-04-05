@@ -6,10 +6,21 @@ using UnityEngine;
 public class PointerCubeGroup : MonoBehaviour
 {
     [SerializeField]
-    private readonly List<PointerCube> triggers;
+    private List<PointerCube> triggers;
     public Action TriggerHandMatchEvent;
     private bool eventTriggered = false;
     private bool shouldTrigger = true;
+
+    private void Awake()
+    {
+        TriggerHandMatchEvent += LogEventTriggered;
+    }
+
+    private void OnDestroy()
+    {
+        TriggerHandMatchEvent -= LogEventTriggered;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +36,12 @@ public class PointerCubeGroup : MonoBehaviour
 
         if(shouldTrigger)
         {
-           // TriggerHandMatchEvent.Invoke();
+           TriggerHandMatchEvent?.Invoke();
         }
+    }
+
+    private void LogEventTriggered()
+    {
+        Debug.Log("Event Triggered");
     }
 }
