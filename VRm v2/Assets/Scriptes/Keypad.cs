@@ -43,6 +43,7 @@ public class Keypad : MonoBehaviour
                                 if (keypadStorage.Dequeue() == 9)
                                 {
                                     target.gameObject.SetActive(false);
+                                    target.gameObject.transform.Translate(new Vector3(0, 0, 1));
                                 }
                             }
                         }
