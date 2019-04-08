@@ -11,6 +11,7 @@ namespace Valve.VR.InteractionSystem.Sample
         public float minMagnitudeToExplode = 1f;
 
         private Interactable interactable;
+        public Vector3 bottlePosition;
 
         private void Start()
         {
@@ -29,9 +30,16 @@ namespace Valve.VR.InteractionSystem.Sample
                     GameObject explodePart = (GameObject)GameObject.Instantiate(explodePartPrefab, this.transform.position, this.transform.rotation);
                     explodePart.GetComponentInChildren<MeshRenderer>().material.SetColor("_TintColor", Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f));
                 }
-
+                bottlePosition = transform.position;
                 Destroy(this.gameObject);
             }
+        }
+
+        private void OnDestroy()
+        {
+            GameObject key = GameObject.Find("Key");
+            key.transform.position = bottlePosition;
+            //key.transform.position = new Vector3(key.transform.position.x, key.transform.position.y, key.transform.position.z);
         }
     }
 }
