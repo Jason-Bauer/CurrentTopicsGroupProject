@@ -9,7 +9,8 @@ public class PointerCube : MonoBehaviour
 {
     //Which hand should this PointerCube listen for?
     [SerializeField]
-    private Valve.VR.SteamVR_Input_Sources matchHand;
+    private Hand matchHand;
+
     //Is the correct hand pointing at this cube?
     [SerializeField]
     private Material defaultMat;
@@ -30,18 +31,23 @@ public class PointerCube : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    private void OnHandHoverBegin(Hand hand)
+    private void Update()
     {
-        if (hand.handType == matchHand)
+        RaycastHit hit;
+        if(Physics.Raycast(matchHand.transform.position,matchHand.transform.TransformDirection(Vector3.forward), out hit, 30.0f))
         {
-            activated = true;
-            meshRenderer.material = correctMat;
+            if(hit.transform == transform)
+            {
+                activated = true;
+                meshRenderer.material = correctMat;
+            }
+            else
+            {
+                activated = false;
+                meshRenderer.material = defaultMat;
+            }
         }
-    }
-    
-    private void OnHandHoverEnd(Hand hand)
-    {
-        if (hand.handType == matchHand && activated)
+        else
         {
             activated = false;
             meshRenderer.material = defaultMat;

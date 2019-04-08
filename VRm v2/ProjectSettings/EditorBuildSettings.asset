@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/BenjaminScene.unity
+    guid: 384b1c9bf59b4f841a0dd725504066d7
   m_configObjects: {}
