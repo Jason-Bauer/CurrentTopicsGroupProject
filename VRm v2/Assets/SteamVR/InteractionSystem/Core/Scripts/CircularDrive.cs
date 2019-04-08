@@ -7,9 +7,11 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Valve.VR.InteractionSystem
 {
+
 
 	//-------------------------------------------------------------------------
 	[RequireComponent( typeof( Interactable ) )]
@@ -34,7 +36,12 @@ namespace Valve.VR.InteractionSystem
 		[Tooltip( "If true, the drive will stay manipulating as long as the button is held down, if false, it will stop if the controller moves out of the collider" )]
 		public bool hoverLock = false;
 
-		[HeaderAttribute( "Limited Rotation" )]
+        [Tooltip("Optionally specify another object to rotate along with the CircularDrive")]
+        public GameObject ObjectToRotate;
+        [Tooltip("Axis to rotate the optional object on")]
+        public Axis_t AxisToRotateOtherObject;
+        
+        [HeaderAttribute( "Limited Rotation" )]
 		[Tooltip( "If true, the rotation will be limited to [minAngle, maxAngle], if false, the rotation is unlimited" )]
 		public bool limited = false;
 		public Vector2 frozenDistanceMinMaxThreshold = new Vector2( 0.1f, 0.2f );
@@ -411,17 +418,34 @@ namespace Valve.VR.InteractionSystem
 		//-------------------------------------------------
 		private void UpdateGameObject()
 		{
-			if ( rotateGameObject )
+            Vector3 axis = Vector3.zero;
+            switch (AxisToRotateOtherObject)
+            {
+                case Axis_t.XAxis:
+                    axis = Vector3.right;
+                    break;
+                case Axis_t.YAxis:
+                    axis = Vector3.up;
+                    break;
+                case Axis_t.ZAxis:
+                    axis = Vector3.forward;
+                    break;
+            }
+            if ( rotateGameObject )
 			{
 				transform.localRotation = start * Quaternion.AngleAxis( outAngle, localPlaneNormal );
-			}
-		}
+                Debug.Log(outAngle);
+
+                if (ObjectToRotate != null)
+                    ObjectToRotate.transform.eulerAngles = new Vector3(outAngle + 90, ObjectToRotate.transform.rotation.y, ObjectToRotate.transform.rotation.z);
+            }
+        }
 
 
-		//-------------------------------------------------
-		// Updates the Debug TextMesh with the linear mapping value and the angle
-		//-------------------------------------------------
-		private void UpdateDebugText()
+        //-------------------------------------------------
+        // Updates the Debug TextMesh with the linear mapping value and the angle
+        //-------------------------------------------------
+        private void UpdateDebugText()
 		{
 			if ( debugText )
 			{
@@ -544,5 +568,5 @@ namespace Valve.VR.InteractionSystem
 				}
 			}
 		}
-	}
+    }
 }
