@@ -437,7 +437,21 @@ namespace Valve.VR.InteractionSystem
                 Debug.Log(outAngle);
 
                 if (ObjectToRotate != null)
-                    ObjectToRotate.transform.eulerAngles = new Vector3(outAngle + 90, ObjectToRotate.transform.rotation.y, ObjectToRotate.transform.rotation.z);
+                {
+                    switch (AxisToRotateOtherObject)
+                    {
+                        case Axis_t.XAxis:
+                            ObjectToRotate.transform.eulerAngles = new Vector3(outAngle + 90, ObjectToRotate.transform.rotation.y, ObjectToRotate.transform.rotation.z);
+                            break;
+                        case Axis_t.YAxis:
+                            ObjectToRotate.transform.eulerAngles = new Vector3(ObjectToRotate.transform.rotation.x, outAngle + 90, ObjectToRotate.transform.rotation.z);
+                            break;
+                        case Axis_t.ZAxis:
+                            ObjectToRotate.transform.eulerAngles = new Vector3(ObjectToRotate.transform.rotation.x, ObjectToRotate.transform.rotation.y, outAngle + 90);
+                            break;
+                    }
+                }
+                    
             }
         }
 
