@@ -12,6 +12,7 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private Interactable interactable;
         public Vector3 bottlePosition;
+        public bool hasKey;
 
         private void Start()
         {
@@ -37,9 +38,11 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private void OnDestroy()
         {
-            GameObject key = GameObject.Find("Key");
-            key.transform.position = bottlePosition;
-            //key.transform.position = new Vector3(key.transform.position.x, key.transform.position.y, key.transform.position.z);
+            if (hasKey)
+            {
+                GameObject key = GameObject.Find("keyObject");
+                key.transform.position = bottlePosition;
+            }
         }
     }
 }
