@@ -6,10 +6,9 @@ URL: https://poly.google.com/view/ejjtM9ykcCd
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
-<<<<<<< HEAD
-Title: Key
-Author: Poly by Google
-URL: https://poly.google.com/view/f2PuwXCjt-K
+Title: Chest Laichingen
+Author: Jörg H.
+URL: https://poly.google.com/view/1ZqO792iKtm
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
@@ -19,13 +18,20 @@ URL: https://poly.google.com/view/b1XMMDEWe1i
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
-Title: shard
-Author: Ray Harli
-URL: https://poly.google.com/view/aaLqWiEbJkN
-=======
+Title: Keyhole
+Author: Poly by Google
+URL: https://poly.google.com/view/eGw0CnxJyjR
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: RobotSteve
 Author: Derky Sprawl
 URL: https://poly.google.com/view/17u_pI8GLh-
->>>>>>> master
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: shard
+Author: Ray Harli
+URL: https://poly.google.com/view/aaLqWiEbJkN
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
