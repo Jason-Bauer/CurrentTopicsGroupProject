@@ -1383,6 +1383,21 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4950907284300789554, guid: a7c2b37096983fb40addeabf8a2aefbe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383078322763266511, guid: a7c2b37096983fb40addeabf8a2aefbe,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383078322763266511, guid: a7c2b37096983fb40addeabf8a2aefbe,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5493485673185246378, guid: a7c2b37096983fb40addeabf8a2aefbe, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a7c2b37096983fb40addeabf8a2aefbe, type: 3}
