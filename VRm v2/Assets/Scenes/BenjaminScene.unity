@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028377, g: 0.22571409, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1024,31 +1024,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -1078,6 +1053,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -2409,31 +2409,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -2463,6 +2438,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -5228,31 +5228,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -5282,6 +5257,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -7340,31 +7340,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -7394,6 +7369,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -8012,31 +8012,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -8066,6 +8041,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -9073,31 +9073,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: cfe3c5032525fe549a9eef8a2518dc09, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -9127,6 +9102,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: cfe3c5032525fe549a9eef8a2518dc09, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -15453,31 +15453,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -15507,6 +15482,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -18368,31 +18368,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -18422,6 +18397,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
@@ -21018,31 +21018,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2159766469970307826, guid: 899f9554905803e4ebc73c69ef586923,
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.size
@@ -21072,6 +21047,31 @@ PrefabInstance:
         type: 3}
       propertyPath: onDetachFromHand.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024710070096666282, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: 34e620aeb4b3ce442bb25d1d43a0ee80, type: 3}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056710626826503508, guid: 899f9554905803e4ebc73c69ef586923,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 899f9554905803e4ebc73c69ef586923, type: 3}
