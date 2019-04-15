@@ -6,11 +6,12 @@ public class Chest : MonoBehaviour
 {
     bool open = false;
     GameObject hinge;
+    GameObject key;
     // Start is called before the first frame update
     void Start()
     {
-        hinge = GameObject.Find("Hinge");
-        open = true;
+        hinge = GameObject.Find("pivot");
+        key = GameObject.Find("Key");
     }
 
     // Update is called once per frame
@@ -18,13 +19,19 @@ public class Chest : MonoBehaviour
     {
         if(open)
         {
-            hinge.transform.Rotate(0f, 0f, hinge.transform.rotation.z + 1);
+            if (hinge.transform.rotation.x <= .6f)
+            {
+                hinge.transform.Rotate(- 1f, 0f, 0f);
+            }
         }
     }
 
-    void Open()
+    private void OnTriggerEnter(Collider other)
     {
-        
-        
+        if(other.gameObject.tag == "key")
+        {
+            open = true;
+        }
     }
+
 }

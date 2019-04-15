@@ -6,12 +6,6 @@ URL: https://poly.google.com/view/ejjtM9ykcCd
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
-Title: Chest Laichingen
-Author: Jörg H.
-URL: https://poly.google.com/view/1ZqO792iKtm
-License: Creative Commons CC-BY
-https://creativecommons.org/licenses/by/3.0/legalcode
-
 Title: Chest Laichingen Neu
 Author: Jörg H.
 URL: https://poly.google.com/view/1DfnZ_JjOlm
