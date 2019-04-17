@@ -6,7 +6,7 @@ public class Keypad : MonoBehaviour
 {
 
     public Queue<int> keypadStorage = new Queue<int>();
-    public GameObject target,target1;
+    public GameObject target,target1,Door;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +43,9 @@ public class Keypad : MonoBehaviour
                             {
                                 if (keypadStorage.Dequeue() == 9)
                                 {
-                                    target.gameObject.SetActive(false);
+                                    
                                     Debug.Log("Moving Doors");
-                                    target.gameObject.transform.Translate(new Vector3(0, 1.2f,0 ));
-                                    target1.gameObject.transform.Translate(new Vector3(0, -1.2f, 0));
-                                    target1.gameObject.SetActive(false);
+                                    Door.GetComponent<Animator>().SetTrigger("character_nearby");
                                 }
                             }
                         }
