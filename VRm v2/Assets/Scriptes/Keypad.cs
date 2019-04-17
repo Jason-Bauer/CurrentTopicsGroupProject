@@ -54,6 +54,29 @@ public class Keypad : MonoBehaviour
             }
         }
     }
+    public void checkcombo2()
+    {
+        if (keypadStorage.Dequeue() == 1)
+        {
+            if (keypadStorage.Dequeue() == 1)
+            {
+                if (keypadStorage.Dequeue() == 1)
+                {
+                 
+                        
+                            
+                             
+
+                                    Debug.Log("Moving Doors");
+                                    Door.GetComponent<Animator>().SetTrigger("character_nearby");
+                                
+                            
+                        
+                    
+                }
+            }
+        }
+    }
 
     public void Dooropen(GameObject door)
     {
