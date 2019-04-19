@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vrmv2.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\mssvr1\\Documents\\GitHub\\CurrentTopicsGroupProject\\VRm v2\\actions.json",
+      "action_manifest_path": "X:\\GitHub\\CurrentTopicsGroupProject\\VRm v2\\actions.json",
       "strings": {
         "en_us": {
           "name": "VRm v2 [Testing]"
