@@ -292,7 +292,8 @@ namespace Valve.VR.InteractionSystem
             Vector3 gravity = useGravity ? Physics.gravity : Vector3.zero;
 
             Vector3 arcPos = startPos + ((projectileVelocity * time) + (0.5f * time * time) * gravity) * scale;
-            //arcPos = Vector3.Lerp(startPos,)
+
+            //arcPos = Vector3.Lerp(startPos, startPos + projectileVelocity * arcDuration, time / arcDuration);
             return arcPos;
         }
 
