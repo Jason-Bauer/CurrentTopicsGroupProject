@@ -1,0 +1,13 @@
+Playtest Feedback
+
+1. Scale and Height Issues 
+  --- 1a. Some of the Space Prefabs are larger than human sized, Look into scaling to player height
+
+2. Hand Issue
+-----2a. Look into if this is simply a lab computer problem or larger issue
+
+3. Sound
+----3a. Implement more sound effects. Some objects have sound, others don't at this point 
+
+    
+  
