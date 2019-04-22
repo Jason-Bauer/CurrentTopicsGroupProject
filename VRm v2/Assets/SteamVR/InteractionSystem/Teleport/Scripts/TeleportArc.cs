@@ -36,7 +36,7 @@ namespace Valve.VR.InteractionSystem
         private bool showArc = true;
         private Vector3 startPos;
         private Vector3 projectileVelocity;
-        private bool useGravity = true;
+        private bool useGravity = false;
         private Transform arcObjectsTransfrom;
         private bool arcInvalid = false;
         private float scale = 1;
@@ -292,6 +292,7 @@ namespace Valve.VR.InteractionSystem
             Vector3 gravity = useGravity ? Physics.gravity : Vector3.zero;
 
             Vector3 arcPos = startPos + ((projectileVelocity * time) + (0.5f * time * time) * gravity) * scale;
+            //arcPos = Vector3.Lerp(startPos,)
             return arcPos;
         }
 

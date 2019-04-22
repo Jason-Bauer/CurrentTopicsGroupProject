@@ -7,6 +7,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - key
+  - pillar
   layers:
   - Default
   - TransparentFX

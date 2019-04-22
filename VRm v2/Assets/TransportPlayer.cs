@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using Valve.VR;
-using Valve.VR.InteractionSystem;
 
 public class TransportPlayer : MonoBehaviour
 {
     [SerializeField]
-    private GameObject targetTransform;
+    [Tooltip("This is the transform the player will be moved to after activating a pillar pointed at this one")]
+    private GameObject thisTransform;
     [SerializeField]
     private GameObject player;
 
@@ -29,6 +27,20 @@ public class TransportPlayer : MonoBehaviour
     [SerializeField]
     private GameObject debugPlayer;
 
+    private bool hovering;
+
+    private LineRenderer line;
+    
+    private void OnHandHoverBegin()
+    {
+        hovering = true;
+    }
+
+    private void OnHandHoverEnd()
+    {
+        hovering = false;
+    }
+
     void OnEnable()
     {
         if (grabPinch != null)
@@ -39,14 +51,29 @@ public class TransportPlayer : MonoBehaviour
 
     private void OnTriggerPressedOrReleased(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource, bool newState)
     {
-        if(newState)
+        if(newState && hovering)
         {
+            line.enabled = true;
+            StartCoroutine(DelayedLineDisable());
             //start coroutine lerp player transform to target transform
-            StartCoroutine(LerpPlayer());
+            RaycastHit hit;
+            if(Physics.Raycast(transform.position, transform.up, out hit))
+            {
+                if(hit.transform.tag=="pillar")
+                {
+                    hit.transform.gameObject.GetComponent<TransportPlayer>().StartLerpPlayer();
+                }
+            }
         }
     }
 
-    private void OnMouseDown()
+    private IEnumerator DelayedLineDisable()
+    {
+        yield return new WaitForSeconds(0.5f);
+        line.enabled = false;
+    }
+
+    public void StartLerpPlayer()
     {
         StartCoroutine(LerpPlayer());
     }
@@ -66,19 +93,25 @@ public class TransportPlayer : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player");
         if (debug)
             player = debugPlayer;
+        line = GetComponent<LineRenderer>();
     }
 
-    IEnumerator LerpPlayer()
+    //private void Update()
+    //{
+    //    Debug.DrawRay(transform.position, transform.up, Color.green,Time.deltaTime);
+    //}
+
+    private IEnumerator LerpPlayer()
     {
-        duration = Vector3.Distance(player.transform.position, targetTransform.transform.position);
+        duration = Vector3.Distance(player.transform.position, thisTransform.transform.position);
         duration /= 8.0f;
         startPos = player.transform.position;
         startRot = player.transform.rotation.eulerAngles;
         while (timer < duration)
         {
             timer += Time.deltaTime;
-            rPos = Vector3.Lerp(startPos, targetTransform.transform.position, timer / duration);
-            rRot = Vector3.Lerp(startRot, targetTransform.transform.rotation.eulerAngles, timer / duration);
+            rPos = Vector3.Lerp(startPos, thisTransform.transform.position, timer / duration);
+            rRot = Vector3.Lerp(startRot, thisTransform.transform.rotation.eulerAngles, timer / duration);
             player.transform.position = rPos;
             player.transform.eulerAngles = rRot;
             yield return null;

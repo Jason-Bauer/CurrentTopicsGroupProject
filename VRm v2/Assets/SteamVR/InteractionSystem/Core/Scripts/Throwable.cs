@@ -57,6 +57,9 @@ namespace Valve.VR.InteractionSystem
         [HideInInspector]
         public Interactable interactable;
 
+        [SerializeField]
+        private bool freezeRotation;
+
 
         //-------------------------------------------------
         protected virtual void Awake()
@@ -148,7 +151,8 @@ namespace Valve.VR.InteractionSystem
 
 			attachTime = Time.time;
 			attachPosition = transform.position;
-			attachRotation = transform.rotation;
+            //if(!freezeRotation)
+                attachRotation = transform.rotation;
 
 		}
 

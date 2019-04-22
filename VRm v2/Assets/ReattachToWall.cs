@@ -9,12 +9,20 @@ public class ReattachToWall : MonoBehaviour
     public float UpperBound;
     public float LowerBound;
     public float ZValue;
-    // Start is called before the first frame update
-    void Start()
-    {
 
+    private Quaternion rotation;
+
+    private void Start()
+    {
+        rotation = transform.rotation;
     }
-    
+
+    void Update()
+    {
+        transform.rotation = rotation;
+        
+    }
+
     public void Reattach()
     {
         Vector3 pos = transform.localPosition;
@@ -28,5 +36,6 @@ public class ReattachToWall : MonoBehaviour
             pos.y = LowerBound;
         pos.z = ZValue;
         transform.localPosition = pos;
+        
     }
 }
