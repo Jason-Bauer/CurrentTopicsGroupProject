@@ -41,14 +41,6 @@
       "requirement": "optional"
     },
     {
-      "name": "/actions/default/in/Shoot",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/Turn",
-      "type": "vector2"
-    },
-    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
