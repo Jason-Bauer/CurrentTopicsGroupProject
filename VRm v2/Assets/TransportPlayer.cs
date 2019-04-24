@@ -57,9 +57,9 @@ public class TransportPlayer : MonoBehaviour
             StartCoroutine(DelayedLineDisable());
             //start coroutine lerp player transform to target transform
             RaycastHit hit;
-            if(Physics.Raycast(transform.position, transform.up, out hit))
+            if(Physics.Raycast(transform.position + transform.up, transform.up, out hit))
             {
-                if(hit.transform.tag=="pillar")
+                if(hit.transform.tag=="pillar" && hit.transform != this.transform)
                 {
                     hit.transform.gameObject.GetComponent<TransportPlayer>().StartLerpPlayer();
                 }
