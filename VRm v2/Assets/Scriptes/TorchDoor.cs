@@ -13,7 +13,7 @@ public class TorchDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        torch1 = GameObject.Find("Head (1)");
+
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class TorchDoor : MonoBehaviour
     {
         if(torch1.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning && torch2.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning && torch3.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning && torch4.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning)
         {
-            Debug.Log("DOOR WILL OPEN");
+            this.GetComponent<Animator>().SetTrigger("character_nearby");
         }
     }
 }
