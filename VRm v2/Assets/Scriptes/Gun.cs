@@ -32,6 +32,7 @@ namespace Valve.VR.InteractionSystem
             GameObject b1 = Instantiate(bullet, bulletholder.transform);
             b1.transform.position = this.gameObject.transform.position;
             b1.GetComponent<Bullet>().forward = this.transform.right;
+            this.GetComponent<AudioSource>().Play();
         }
     }
 }
