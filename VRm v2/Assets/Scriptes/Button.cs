@@ -6,11 +6,12 @@ public class Button : MonoBehaviour
 {
     public GameObject door;
     Valve.VR.InteractionSystem.Sample.ButtonEffect btn;
+    AudioSource sound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class Button : MonoBehaviour
         ColorSelf(Color.cyan);
         transform.position = new Vector3(10f, 1.795f, -10.167f);
         door.GetComponent<Animator>().SetTrigger("character_nearby");
+        sound.Play();
     }
 
     private void ColorSelf(Color newColor)

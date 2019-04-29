@@ -41,7 +41,7 @@ namespace Valve.VR.InteractionSystem.Sample
             if (hasKey)
             {
                 GameObject key = GameObject.Find("keyObject");
-                key.transform.position = bottlePosition;
+                key.transform.position = new Vector3(bottlePosition.x, bottlePosition.y + 1f, bottlePosition.z);
             }
         }
     }

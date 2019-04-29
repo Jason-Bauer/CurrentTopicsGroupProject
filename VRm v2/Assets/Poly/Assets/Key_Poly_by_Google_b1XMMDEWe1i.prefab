@@ -156,6 +156,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   interactable: {fileID: 0}
+  freezeRotation: 0
   gripOffset: {fileID: 0}
   pinchOffset: {fileID: 0}
 --- !u!114 &5479858063638042767

@@ -6,10 +6,12 @@ public class Chest : MonoBehaviour
 {
     bool open = false;
     GameObject hinge;
+    AudioSource sound;
     // Start is called before the first frame update
     void Start()
     {
         hinge = GameObject.Find("pivot");
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class Chest : MonoBehaviour
             {
                 hinge.transform.Rotate(- 1f, 0f, 0f);
             }
+            sound.Play();
         }
     }
 
