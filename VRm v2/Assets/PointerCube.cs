@@ -31,7 +31,7 @@ public class PointerCube : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         RaycastHit hit;
         if(Physics.Raycast(matchHand.transform.position,matchHand.transform.TransformDirection(Vector3.forward), out hit, 30.0f))

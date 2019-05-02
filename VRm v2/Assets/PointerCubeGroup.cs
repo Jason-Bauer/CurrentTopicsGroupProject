@@ -11,6 +11,9 @@ public class PointerCubeGroup : MonoBehaviour
     private bool eventTriggered = false;
     private bool shouldTrigger = true;
 
+
+    
+
     private void Awake()
     {
         TriggerHandMatchEvent += LogEventTriggered;
@@ -21,22 +24,24 @@ public class PointerCubeGroup : MonoBehaviour
         TriggerHandMatchEvent -= LogEventTriggered;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerStay(Collider other)
     {
-        if (triggers.Count < 1)
-            return;
-
-        shouldTrigger = true;   
-        for (int i = 0; i < triggers.Count; i++)
+        if(other.transform.tag == "Player")
         {
-            if (!triggers[i].Activated)
-                shouldTrigger = false;
-        }
+            if(triggers.Count < 1)
+                return;
 
-        if(shouldTrigger)
-        {
-           TriggerHandMatchEvent?.Invoke();
+            shouldTrigger = true;
+            for(int i = 0; i < triggers.Count; i++)
+            {
+                if(!triggers[i].Activated)
+                    shouldTrigger = false;
+            }
+
+            if(shouldTrigger)
+            {
+                TriggerHandMatchEvent?.Invoke();
+            }
         }
     }
 

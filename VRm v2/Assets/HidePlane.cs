@@ -19,7 +19,8 @@ public class HidePlane : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(Vector3.Distance(transform.position, player.transform.position) < disappearDistance)
+        if(Vector3.Distance(transform.position, player.transform.position) < disappearDistance && 
+            Vector3.Dot(transform.up,player.transform.up) > 0.9f)
         {
             teleportArea.SetLocked(false);
         }
