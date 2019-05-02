@@ -46,6 +46,7 @@ public class Keypad : MonoBehaviour
                                     
                                     Debug.Log("Moving Doors");
                                     Door.GetComponent<Animator>().SetTrigger("character_nearby");
+                                    Door.GetComponent<AudioSource>().Play();
                                 }
                             }
                         }
@@ -69,6 +70,7 @@ public class Keypad : MonoBehaviour
 
                                     Debug.Log("Moving Doors");
                                     Door.GetComponent<Animator>().SetTrigger("character_nearby");
+                    Door.GetComponent<AudioSource>().Play();
                                 
                             
                         
