@@ -22,10 +22,10 @@ public class ModelSwap : MonoBehaviour
     //[SerializeField]
     //private GameObject fallbackPlayer;
 
-    private void Awake()
-    {
-        player = GameObject.FindGameObjectWithTag("Player");
-    }
+    //private void Awake()
+    //{
+    //    player = GameObject.FindGameObjectWithTag("Player");
+    //}
 
     private void Start()
     {
