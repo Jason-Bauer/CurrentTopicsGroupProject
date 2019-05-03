@@ -112,8 +112,12 @@ namespace Valve.VR.InteractionSystem
 
         private Interactable interactable;
 
-		//-------------------------------------------------
-		private void Freeze( Hand hand )
+        //Added
+        public UnityEvent DriveBegin;
+        public UnityEvent DriveEnd;
+
+        //-------------------------------------------------
+        private void Freeze( Hand hand )
 		{
 			frozen = true;
 			frozenAngle = outAngle;
@@ -266,6 +270,8 @@ namespace Valve.VR.InteractionSystem
 
 				driving = true;
 
+                DriveBegin?.Invoke();
+
 				ComputeAngle( hand );
 				UpdateAll();
 
@@ -281,6 +287,9 @@ namespace Valve.VR.InteractionSystem
 				}
 
                 driving = false;
+
+                DriveEnd?.Invoke();
+
                 grabbedWithType = GrabTypes.None;
             }
 

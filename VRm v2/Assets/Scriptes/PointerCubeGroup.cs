@@ -2,28 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PointerCubeGroup : MonoBehaviour
 {
     [SerializeField]
     private List<PointerCube> triggers;
-    public Action TriggerHandMatchEvent;
     private bool eventTriggered = false;
     private bool shouldTrigger = true;
-
-
+    public UnityEvent uEvent;
     
-
-    private void Awake()
-    {
-        TriggerHandMatchEvent += LogEventTriggered;
-    }
-
-    private void OnDestroy()
-    {
-        TriggerHandMatchEvent -= LogEventTriggered;
-    }
-
     private void OnTriggerStay(Collider other)
     {
         if(other.transform.tag == "Player")
@@ -40,13 +28,8 @@ public class PointerCubeGroup : MonoBehaviour
 
             if(shouldTrigger)
             {
-                TriggerHandMatchEvent?.Invoke();
+                uEvent?.Invoke();
             }
         }
-    }
-
-    private void LogEventTriggered()
-    {
-        Debug.Log("Event Triggered");
     }
 }

@@ -10,25 +10,12 @@ public class PointerCube : MonoBehaviour
     //Which hand should this PointerCube listen for?
     [SerializeField]
     private Hand matchHand;
-
-    //Is the correct hand pointing at this cube?
-    [SerializeField]
-    private Material defaultMat;
-    [SerializeField]
-    private Material correctMat;
-
-    private MeshRenderer meshRenderer;
-
+    
     private bool activated;
 
     public bool Activated
     {
         get { return activated; }
-    }
-
-    private void Start()
-    {
-        meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void FixedUpdate()
@@ -39,18 +26,15 @@ public class PointerCube : MonoBehaviour
             if(hit.transform == transform)
             {
                 activated = true;
-                meshRenderer.material = correctMat;
             }
             else
             {
                 activated = false;
-                meshRenderer.material = defaultMat;
             }
         }
         else
         {
             activated = false;
-            meshRenderer.material = defaultMat;
         }
     }
 }
