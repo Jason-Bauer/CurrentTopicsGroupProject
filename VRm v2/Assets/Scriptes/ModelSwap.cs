@@ -18,15 +18,15 @@ public class ModelSwap : MonoBehaviour
     private bool switched;
 
     [SerializeField]
-    private bool debugNoVR;
-    [SerializeField]
-    private GameObject fallbackPlayer;
+    private bool debugNoVR = false;
+    //[SerializeField]
+    //private GameObject fallbackPlayer;
 
 
     private void Start()
     {
-        if (debugNoVR)
-            player = fallbackPlayer;
+        //if (debugNoVR)
+        //    player = fallbackPlayer;
 
         if (player.transform.rotation.eulerAngles.y < angleMin ||
             player.transform.rotation.eulerAngles.y > angleMax)

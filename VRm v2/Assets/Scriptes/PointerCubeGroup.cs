@@ -11,25 +11,27 @@ public class PointerCubeGroup : MonoBehaviour
     private bool eventTriggered = false;
     private bool shouldTrigger = true;
     public UnityEvent uEvent;
-    
-    private void OnTriggerStay(Collider other)
+
+    private bool triggered = false;
+
+    private void Update()
     {
-        if(other.transform.tag == "Player")
+        if(triggered)
+            return;
+        if(triggers.Count < 1)
+            return;
+
+        shouldTrigger = true;
+        for(int i = 0; i < triggers.Count; i++)
         {
-            if(triggers.Count < 1)
-                return;
+            if(!triggers[i].Activated)
+                shouldTrigger = false;
+        }
 
-            shouldTrigger = true;
-            for(int i = 0; i < triggers.Count; i++)
-            {
-                if(!triggers[i].Activated)
-                    shouldTrigger = false;
-            }
-
-            if(shouldTrigger)
-            {
-                uEvent?.Invoke();
-            }
+        if(shouldTrigger)
+        {
+            uEvent?.Invoke();
+            triggered = true;
         }
     }
 }

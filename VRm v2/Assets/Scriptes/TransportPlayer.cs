@@ -30,7 +30,13 @@ public class TransportPlayer : MonoBehaviour
     private bool hovering;
 
     private LineRenderer line;
-    
+
+    private void Awake()
+    {
+        if(player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
+    }
+
     private void OnHandHoverBegin()
     {
         hovering = true;
