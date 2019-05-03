@@ -33,8 +33,7 @@ public class TransportPlayer : MonoBehaviour
 
     private void Awake()
     {
-        if(player == null)
-            player = GameObject.FindGameObjectWithTag("Player");
+         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void OnHandHoverBegin()

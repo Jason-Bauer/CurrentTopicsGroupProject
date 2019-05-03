@@ -30,6 +30,7 @@ public class PillarPuzzleRotate : MonoBehaviour
 
     private IEnumerator SlowRotate()
     {
+        GetComponent<AudioSource>().Play();
         running = true;
         float timer = 0.0f;
         while(timer < timeToRotate)
@@ -47,5 +48,6 @@ public class PillarPuzzleRotate : MonoBehaviour
         }
         rotated = !rotated;
         running = false;
+        GetComponent<AudioSource>().Stop();
     }
 }
