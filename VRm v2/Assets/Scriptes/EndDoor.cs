@@ -13,6 +13,7 @@ public class EndDoor : MonoBehaviour
     public GameObject greenEnd1;
     public GameObject greenEnd2;
     public GameObject greenEnd3;
+    public GameObject win;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class EndDoor : MonoBehaviour
             button2.GetComponent<Valve.VR.InteractionSystem.Sample.ButtonEffect>().isPressed && 
             button3.GetComponent<Valve.VR.InteractionSystem.Sample.ButtonEffect>().isPressed)
         {
-            Debug.Log("All buttons pressed");
+            win.GetComponent<SpriteRenderer>().enabled = true;
         }
 
         if(button1.GetComponent<Valve.VR.InteractionSystem.Sample.ButtonEffect>().isPressed)
