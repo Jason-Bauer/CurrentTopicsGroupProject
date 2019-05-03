@@ -6,6 +6,7 @@ public class PillarPuzzleInvokeRotation : MonoBehaviour
 {
     public void InvokeRotation()
     {
-        PillarPuzzleRotate.Rotate?.Invoke();
+        if(PillarPuzzleRotate.Rotate!=null)
+            PillarPuzzleRotate.Rotate.Invoke();
     }
 }

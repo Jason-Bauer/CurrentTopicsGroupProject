@@ -30,7 +30,8 @@ public class PointerCubeGroup : MonoBehaviour
 
         if(shouldTrigger)
         {
-            uEvent?.Invoke();
+            if(uEvent!=null)
+                uEvent.Invoke();
             triggered = true;
         }
     }

@@ -42,7 +42,8 @@ public class VRHoverClick : MonoBehaviour
     {
         if(newState && hovering)
         {
-            unityEvent?.Invoke();
+            if(unityEvent!=null)
+                unityEvent.Invoke();
         }
     }
 

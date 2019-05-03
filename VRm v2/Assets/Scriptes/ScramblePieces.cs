@@ -41,7 +41,8 @@ public class ScramblePieces : MonoBehaviour
     private void OnSolved()
     {
         transform.localPosition = solutionPoint;
-        ScrambleGroup.IncrementSolved?.Invoke();
+        if(ScrambleGroup.IncrementSolved!=null)
+            ScrambleGroup.IncrementSolved.Invoke();
         Destroy(GetComponent<Throwable>());
         Destroy(GetComponent<VelocityEstimator>());
         Destroy(GetComponent<Interactable>());
