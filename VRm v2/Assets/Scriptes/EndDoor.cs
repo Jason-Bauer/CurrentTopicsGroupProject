@@ -9,7 +9,7 @@ public class EndDoor : MonoBehaviour
     public GameObject button3;
     public GameObject green1;
     public GameObject green2;
-    public GameObject green3;
+    //public GameObject green3;
     public GameObject greenEnd1;
     public GameObject greenEnd2;
     public GameObject greenEnd3;
@@ -44,7 +44,7 @@ public class EndDoor : MonoBehaviour
         if (button3.GetComponent<Valve.VR.InteractionSystem.Sample.ButtonEffect>().isPressed)
         {
             greenEnd3.GetComponent<SpriteRenderer>().enabled = true;
-            green3.GetComponent<SpriteRenderer>().enabled = true;
+            //green3.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 }
