@@ -8,12 +8,14 @@ public class TorchDoor : MonoBehaviour
     public GameObject torch2;
     public GameObject torch3;
     public GameObject torch4;
-    
+
+    AudioSource sound;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        sound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,6 +24,7 @@ public class TorchDoor : MonoBehaviour
         if(torch1.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning && torch2.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning && torch3.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning && torch4.GetComponent<Valve.VR.InteractionSystem.FireSource>().isBurning)
         {
             this.GetComponent<Animator>().SetTrigger("character_nearby");
+            sound.Play();
         }
     }
 }

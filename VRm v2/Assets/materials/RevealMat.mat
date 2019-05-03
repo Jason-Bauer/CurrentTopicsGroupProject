@@ -78,4 +78,4 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _LightDirection: {r: 0.05024255, g: -0.9982947, b: -0.029723948, a: 0}
-    - _LightPosition: {r: 11.280739, g: 2.4512863, b: 9.470524, a: 0}
+    - _LightPosition: {r: 11.372734, g: 2.70829, b: 8.923519, a: 0}

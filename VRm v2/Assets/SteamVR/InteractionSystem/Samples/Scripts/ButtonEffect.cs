@@ -7,12 +7,15 @@ using System;
 
 namespace Valve.VR.InteractionSystem.Sample
 {
+    
     public class ButtonEffect : MonoBehaviour
     {
+        public bool isPressed = false;
         public void OnButtonDown(Hand fromHand)
         {
             ColorSelf(Color.cyan);
             fromHand.TriggerHapticPulse(1000);
+            isPressed = true;
         }
 
         public void OnButtonUp(Hand fromHand)
